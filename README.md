@@ -1,31 +1,57 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# RIDDLE ME THIS
+![Mock up of home](/readmeimages/homescreen.png)
 
-Welcome nschloesserm,
+[Link to LIVE game](https://riddle-me-this-mckenna.herokuapp.com/)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+# 1. Project Goals
+Player answers a series of 3 random riddles.  If they answer correectly they get points. They can choose to answer more riddles to gain more points, or they can quit the game.
 
-## Reminders
+##  How to play:
+1. Player enters "Yes" to start quiz
+2. Player answers each riddle.
+3. Score is shown at end and decision to keep playing ot to stop is made.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+# 2. Features
 
-## Creating the Heroku app
+## 2.1 All features
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+1. Title page:
+![title page](/readmeimages/titlepage.png)
+- Welcomes the user and ask if they would like to answer riddles.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+2. First Riddle:
+![Riddle page](/readmeimages/riddles.png)
+- Celebrates the users choice to begin.
+- Ask the first randomly generated riddle. 
+- Prints "Correct" if correct.
+- Prints the answer if wrong.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+3. Final Score:
+![final score](/readmeimages/score.png)
+- Calculates and shows number of correct answers. 
+- Ask if user would like to continue to answer riddles.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## 2.2 Features to implement:
+1. Prevent repeating riddles
+2. Impliment some sort of timer feature. 
+3. Negative score for wrong answers. 
+4. Create a leaderboard.
 
-Connect your GitHub repository and deploy as normal.
+# 4. Technologies used 
+* [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - Content and structure
+* [Heroku](https://id.heroku.com/login) - Host
+* [Gitpod](https://www.gitpod.io/) - Coding workspace
+* [Github/ Github pages](https://github.com/)- Commit my code
+* [responsive mockup](https://responsivemockups.com/)- Mockup of website with different formats 
 
-## Constraints
+# 5. Testing  
+This quiz was tested in the terminal on gitpod and on Heroku by myself and other users.  
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+# 6 Code Validation
+- Used [PEP8 Python Validator](http://pep8online.com/) to check Python content.
 
------
-Happy coding!
+# 7. Credits
+
+* Hedy Phillips - 78 Riddles for Adults That Will Test Your Smarts - source for riddles.
+* [text to ascii art generator](https://patorjk.com/software/taag/#p=display&v=2&f=Swamp%20Land&t=Riddle%0Ame%0Athis!) - for ascii text art
+* [Python: Python Random Questions Program](https://www.youtube.com/watch?v=1yCMfvLl4bQ) - code to randomly generate questions

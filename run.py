@@ -3,7 +3,8 @@ import random
 correct = []
 score = len(correct)
 
-#opening title fuction. Prints out opening title.
+# opening title fuction. Prints out opening title.
+
 
 def openingTitle():
     print("""      _______    __     ________   ________   ___       _______  
@@ -27,7 +28,8 @@ def openingTitle():
          \__|    \__|  |__/(__\_|_)(_______/(_____/              
                                                                 """)
 
-#This is the game start function.
+# This is the game start function.
+
 
 def riddleGameStart():
     print("Would you like to answer some riddles? (Yes/No): ")
@@ -55,10 +57,11 @@ def riddleGameStart():
         print("\n")
         riddleGameStart()
 
-#This function defines the game score by counting the appended "correct" list and clears the list if the user doesnt want to continue.  It also resets the game either way.
+# This function defines the game score by counting the appended "correct" list and 
+# clears the list if the user doesnt want to continue.  It also resets the game either way.
 def rating(score):
     print("\n")
-    print("congratulations, you have answered",score,"correctly")
+    print("congratulations, you have answered", score ,"correctly")
     print("\n")
     print("Would you like to try more riddles? (Yes/No)")
     print("\n")
@@ -282,13 +285,13 @@ def riddleGame():
                 print("\nCorrect!\n")
             else:
                 print("\nSorry, the correct answer is a name.\n")
-#format for adding new riddles
-        #if riddle_number == :
+# format for adding new riddles
+        # if riddle_number == :
          #  print("\n")
           #  riddle__answer = input()
          #   print("\n")
           #  if riddle__answer.lower() == "":
-         #       correct.append("yes")
+               # correct.append("yes")
           #      print("\nCorrect!\n")
          #   else:
            #     print("\nWrong!\n")
