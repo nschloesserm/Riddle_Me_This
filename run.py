@@ -18,3 +18,22 @@ print("""  _______    __     ________   ________   ___       _______
     \:  |   (:  (  )  :)/\  |\  /" \   :)/ |_/ )             
      \__|    \__|  |__/(__\_|_)(_______/(_____/              
                                                              """)
+
+def riddleGameStart():
+    print("Would you like to answer some riddles? (Yes/No): ")
+    answer = input()
+
+    if answer.lower() == 'no':
+        print("Sorry, maybe next time!")
+        riddleGameStart()
+    if answer.lower() == 'yes':
+        print("Yay!")
+        riddleGame()  
+
+import random
+
+def riddleGame():
+       
+
+riddleGameStart()
+riddleGame()
