@@ -3,6 +3,8 @@ import random
 correct = []
 score = len(correct)
 
+#opening title fuction. Prints out opening title.
+
 def openingTitle():
     print("""      _______    __     ________   ________   ___       _______  
      /"      \  |" \   |"      "\ |"      "\ |"  |     /"     "| 
@@ -24,6 +26,8 @@ def openingTitle():
         \:  |   (:  (  )  :)/\  |\  /" \   :)/ |_/ )             
          \__|    \__|  |__/(__\_|_)(_______/(_____/              
                                                                 """)
+
+#This is the game start function.
 
 def riddleGameStart():
     print("Would you like to answer some riddles? (Yes/No): ")
@@ -51,6 +55,7 @@ def riddleGameStart():
         print("\n")
         riddleGameStart()
 
+#This function defines the game score by counting the appended "correct" list and clears the list if the user doesnt want to continue.  It also resets the game either way.
 def rating(score):
     print("\n")
     print("congratulations, you have answered",score,"correctly")
@@ -107,6 +112,8 @@ def rating(score):
  +-+-+-+-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+ +-+-+""")
         print("\n")
         riddleGameStart()
+
+#this is a random riddle generator function which picks three random riddles from the ones listed below. Then it adds "yes" to the "correct" list if the answer is correct and nothing if the answer is wrong.
 
 def riddleGame():
     for riddles_needed in range(int("3")):
@@ -275,6 +282,7 @@ def riddleGame():
                 print("\nCorrect!\n")
             else:
                 print("\nSorry, the correct answer is a name.\n")
+#format for adding new riddles
         #if riddle_number == :
          #  print("\n")
           #  riddle__answer = input()
