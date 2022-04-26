@@ -26,10 +26,7 @@ def openingTitle():
                                                                 """)
 
 def riddleGameStart():
-    print(""" +-+-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+ +-+-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+
- |W|o|u|l|d| |y|o|u| |l|i|k|e| |t|o| |a|n|s|w|e|r| |s|o|m|e| |r|i|d|d|l|e|s|?| |(|Y|e|s|/|N|o|)|:|
- +-+-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+ +-+-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+""")
-    print("\n")
+    print("Would you like to answer some riddles? (Yes/No): ")
     answer = input()
     print("\n")
 
