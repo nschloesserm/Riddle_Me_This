@@ -55,9 +55,7 @@ def rating(score):
     print("\n")
     print("congratulations, you have answered",score,"correctly")
     print("\n")
-    print(""" +-+-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+
- |W|o|u|l|d| |y|o|u| |l|i|k|e| |t|r|y| |m|o|r|e| |r|i|d|d|l|e|s|?| |(|Y|e|s|/|N|o|)|:|
- +-+-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+""")
+    print("Would you like to try more riddles? (Yes/No)")
     print("\n")
     answer = input()
     print("\n")
