@@ -26,39 +26,71 @@ def openingTitle():
                                                                 """)
 
 def riddleGameStart():
-    print("\nWould you like to answer some riddles? (Yes/No): \n")
+    print(""" +-+-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+ +-+-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+
+ |W|o|u|l|d| |y|o|u| |l|i|k|e| |t|o| |a|n|s|w|e|r| |s|o|m|e| |r|i|d|d|l|e|s|?| |(|Y|e|s|/|N|o|)|:|
+ +-+-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+ +-+-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+""")
+    print("\n")
     answer = input()
+    print("\n")
 
     if answer.lower() == 'no':
-        print("\nSorry, maybe next time!\n")
+        print(""" +-+-+-+-+-+-+ +-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+-+
+ |S|o|r|r|y|,| |m|a|y|b|e| |n|e|x|t| |t|i|m|e|!|
+ +-+-+-+-+-+-+ +-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+-+""")
+        print("\n")
         time.sleep(2)
         openingTitle()
         riddleGameStart()
     if answer.lower() == 'yes':
-        print("\nYay!\n")
+        print(""" +-+-+-+-+ +-+-+-+-+-+ +-+-+-+-+-+-+
+ |Y|a|y|,| |l|e|t|'|s| |s|t|a|r|t|!|
+ +-+-+-+-+ +-+-+-+-+-+ +-+-+-+-+-+-+""")
+        print("\n")
         riddleGame()
     else:
-        print("\nPlease type Yes or No\n")
+        print(""" +-+-+-+-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+ +-+-+
+ |P|l|e|a|s|e| |t|y|p|e| |Y|e|s| |o|r| |N|o|
+ +-+-+-+-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+ +-+-+""")
+        print("\n")
         riddleGameStart()
 
 def rating(score):
-    print("Congradulations, you have answered",score,"correctly")
-    print("\nWould you like to play again? (Yes/No): \n")
+    print("\n")
+    print("congratulations, you have answered",score,"correctly")
+    print("\n")
+    print(""" +-+-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+
+ |W|o|u|l|d| |y|o|u| |l|i|k|e| |t|r|y| |m|o|r|e| |r|i|d|d|l|e|s|?| |(|Y|e|s|/|N|o|)|:|
+ +-+-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+""")
+    print("\n")
     answer = input()
+    print("\n")
 
     if answer.lower() == 'no':
-        print("\nSorry, maybe next time!\n")
+        print(""" +-+-+-+-+-+-+ +-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+-+
+ |S|o|r|r|y|,| |m|a|y|b|e| |n|e|x|t| |t|i|m|e|!|
+ +-+-+-+-+-+-+ +-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+-+""")
+        print("\n")
         time.sleep(3)
+        print("\n")
+        print("\n")
+        correct.clear()
         openingTitle()
         riddleGameStart()
     if answer.lower() == 'yes':
-        print("\nYay!\n")
+        print(""" +-+-+-+-+ +-+-+-+-+-+ +-+-+ +-+-+-+
+ |Y|a|y|,| |l|e|t|'|s| |d|o| |i|t|!|
+ +-+-+-+-+ +-+-+-+-+-+ +-+-+ +-+-+-+""")
+        print("\n")
+        time.sleep(3)
         openingTitle()
         riddleGame()
         score = len(correct)
         rating(score)
     else:
-        print("\nPlease type Yes or No\n")
+        print(""" +-+-+-+-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+ +-+-+
+ |P|l|e|a|s|e| |t|y|p|e| |Y|e|s| |o|r| |N|o|
+ +-+-+-+-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+ +-+-+""")
+        print("\n")
         riddleGameStart()
 
 def riddleGame():
@@ -70,8 +102,12 @@ def riddleGame():
         riddle_number = random.randint(1, 3)
 
         if riddle_number == 1:
-            print("\nWhat has many teeth, but cannot bite?\n")
+            print(""" +-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+ +-+-+-+-+-+
+ |W|h|a|t| |h|a|s| |m|a|n|y| |t|e|e|t|h|,| |b|u|t| |c|a|n|n|o|t| |b|i|t|e|?|
+ +-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+ +-+-+-+-+-+""")
+            print("\n")
             riddle_one_answer = input()
+            print("\n")
             if riddle_one_answer.lower() == "a comb" or riddle_one_answer.lower() == "comb":
                 correct.append("yes")
                 print("\ncorrect!\n")
@@ -79,7 +115,9 @@ def riddleGame():
                 print("\nworng!\n")
         if riddle_number == 2:
             print("\nriddletwo?\n")
+            print("\n")
             riddle_two_answer = input()
+            print("\n")
             if riddle_two_answer == "b":
                 correct.append("yes")
                 print("\ncorrect!\n")
@@ -87,7 +125,9 @@ def riddleGame():
                 print("\nworng!\n")
         if riddle_number == 3:
             print("\nriddlethree?\n")
+            print("\n")
             riddle_three_answer = input()
+            print("\n")
             if riddle_three_answer == "c":
                 correct.append("yes")
                 print("\ncorrect!\n")
