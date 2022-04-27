@@ -130,8 +130,10 @@ def riddleGame():
         riddle_eight = 8
         riddle_nine = 9
         riddle_ten = 10
+        riddle_ten = 11
+        riddle_ten = 12
 
-        riddle_number = random.randint(1, 10)
+        riddle_number = random.randint(1, 12)
 
         if riddle_number == 1:
             print(""" +-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+-+-+-+ +-+-+-+ +-+-+-+-+-+-+ +-+-+-+-+-+
@@ -285,16 +287,37 @@ def riddleGame():
                 print("\nCorrect!\n")
             else:
                 print("\nSorry, the correct answer is a name.\n")
-# format for adding new riddles
-        # if riddle_number == :
-         #  print("\n")
-          #  riddle__answer = input()
-         #   print("\n")
-          #  if riddle__answer.lower() == "":
-               # correct.append("yes")
-          #      print("\nCorrect!\n")
-         #   else:
-           #     print("\nWrong!\n")
+        if riddle_number == 11:
+            print(""" +-+-+-+-+ +-+-+-+-+-+-+ +-+-+-+-+ +-+ +-+-+ +-+-+-+-+ +-+-+-+-+ +-+ +-+-+ 
+ |W|h|a|t| |s|t|a|r|t|s| |w|i|t|h| |a| |T|,| |e|n|d|s| |w|i|t|h| |a| |T|,| 
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +-+ +-+-+ +-+-+-+-+ +-+-+-+-+ +-+ +-+-+ 
+ |a|n|d| |h|a|s| |T| |i|n| |i|t|?|                                         
+ +-+-+-+ +-+-+-+ +-+ +-+-+ +-+-+-+                                         """)
+            print("\n")
+            riddle_eleven_answer = input()
+            print("\n")
+            if riddle_eleven_answer.lower() == "teapot" or riddle_eleven_answer.lower() == "a teapot":
+                correct.append("yes")
+                print("\nCorrect!\n")
+            else:
+                print("\nSorry, the correct answer is a teapot.\n")
+        if riddle_number == 12:
+            print(""" +-+-+-+-+ +-+-+ +-+-+-+ +-+-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+-+-+ 
+ |W|h|a|t| |d|o| |y|o|u| |t|h|r|o|w| |o|u|t| |w|h|e|n| |y|o|u| |w|a|n|t| 
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +-+-+-+-+ +-+-+-+ +-+-+-+-+ 
+ |t|o| |u|s|e| |i|t| |b|u|t| |t|a|k|e| |i|n| |w|h|e|n| |y|o|u| |d|o|n|t| 
+ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+-+-+-+ +-+-+-+ +-+-+-+-+ 
+ |w|a|n|t| |t|o| |u|s|e| |i|t|?|                                         
+ +-+-+-+-+ +-+-+ +-+-+-+ +-+-+-+                                         """)
+            print("\n")
+            riddle_twelve_answer = input()
+            print("\n")
+            if riddle_twelve_answer.lower() == "an anchor" or riddle_twelve_answer.lower() == "a anchor" or riddle_twelve_answer.lower() == "anchor":
+                correct.append("yes")
+                print("\nCorrect!\n")
+            else:
+                print("\nSorry, the correct answer is an anchor.\n")
+        
 openingTitle()
 riddleGameStart()
 score = len(correct)
